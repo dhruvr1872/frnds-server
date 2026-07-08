@@ -1,4 +1,4 @@
 module.exports = {
-    token : "secret-starter-mern",
-    database : "mongodb+srv://admin:dKj30YMhx4HtCtOP@frnds.vf55u.mongodb.net/user_db?retryWrites=true&w=majority"
+    token: process.env.JWT_SECRET || 'change-me',
+    database: process.env.MONGODB_URI || ''
 };
